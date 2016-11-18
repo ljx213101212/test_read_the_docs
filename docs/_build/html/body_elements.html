@@ -1,0 +1,790 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Body Elements &mdash; hello world ;sdasd documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="hello world ;sdasd documentation" href="index.html"/>
+        <link rel="next" title="Body Elements 2" href="body_elements_2.html"/>
+        <link rel="prev" title="Syntax Details" href="syntax_details.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> hello world
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                ;sdasd
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="structure.html">Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="syntax_details.html">Syntax Details</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Body Elements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="body_elements_2.html">Body Elements 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">hello world</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Body Elements</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/body_elements.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="body-elements">
+<h1>Body Elements<a class="headerlink" href="#body-elements" title="Permalink to this headline">¶</a></h1>
+<p><strong>Syntax diagram</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>paragraph</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>paragraSh</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>paragraSh
+ASKDASKDJSADJLKJSLKAD</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Bullet Lists</strong></p>
+<ul>
+<li><p class="first">This is the first bullet list item.  The blank line above the
+first list item is required; blank lines between list items
+(such as below this paragraph) are optional.</p>
+</li>
+<li><p class="first">This is the first paragraph in the second item in the list.</p>
+<p>This is the second paragraph in the second item in the list.
+The blank line above this paragraph is required.  The left edge
+of this paragraph lines up with the paragraph above, both
+indented relative to the bullet.</p>
+<ul class="simple">
+<li>This is a sublist.  The bullet lines up with the left edge of
+the text blocks above.  A sublist is a new list so requires a
+blank line above and below.</li>
+</ul>
+</li>
+<li><p class="first">This is the third item of the main list.</p>
+</li>
+</ul>
+<p>This paragraph is not part of the list.
+Here are examples of incorrectly formatted bullet lists:</p>
+<ul class="simple">
+<li>This first line is fine.</li>
+</ul>
+<p>A blank line is required between list items and paragraphs.
+(Warning)</p>
+<ul>
+<li><p class="first">The following line appears to be a new sublist, but it is not:
+- This is a paragraph continuation, not a sublist (since there&#8217;s</p>
+<blockquote>
+<div><p>no blank line).  This line is also incorrectly indented.</p>
+</div></blockquote>
+<ul class="simple">
+<li>Warnings may be issued by the implementation.</li>
+</ul>
+</li>
+</ul>
+<p>Syntax diagram:</p>
+<p><strong>Enumerated Lists</strong></p>
+<p>Examples of nested enumerated lists:</p>
+<ol class="arabic simple">
+<li>Item 1 initial text.<ol class="loweralpha">
+<li>Item 1a.</li>
+<li>Item 1b.</li>
+</ol>
+</li>
+<li><ol class="first loweralpha">
+<li>Item 2a.</li>
+<li>Item 2b.</li>
+</ol>
+</li>
+</ol>
+<p>Example syntax diagram:</p>
+<p><strong>Definition Lists</strong></p>
+<dl class="docutils">
+<dt>term 1</dt>
+<dd>Definition 1.</dd>
+<dt>term 2</dt>
+<dd><p class="first">Definition 2, paragraph 1.</p>
+<p class="last">Definition 2, paragraph 2.</p>
+</dd>
+<dt>term 3</dt>
+ <span class="classifier-delimiter">:</span> <span class="classifier">classifier</span><dd>Definition 3.</dd>
+<dt>term 4</dt>
+ <span class="classifier-delimiter">:</span> <span class="classifier">classifier one</span> <span class="classifier-delimiter">:</span> <span class="classifier">classifier two</span><dd>Definition 4.</dd>
+</dl>
+<p><strong>Field Lists</strong></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Date:</th><td class="field-body"><p class="first">2001-08-16</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Version:</th><td class="field-body"><p class="first">1</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Authors:</th><td class="field-body"><ul class="first simple">
+<li>Me</li>
+<li>Myself</li>
+<li>I</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Indentation:</th><td class="field-body"><p class="first">Since the field marker may be quite long, the second
+and subsequent lines of the field body do not have to line up
+with the first line, but they must be indented relative to the
+field name marker, and they must line up with each other.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameter i:</th><td class="field-body"><p class="first last">integer</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Option Lists</strong></p>
+<p>Doctree elements: option_list, option_list_item, option_group, option, option_string, option_argument, description.</p>
+<p>Option lists are two-column lists of command-line options and descriptions, documenting a program&#8217;s options. For example:</p>
+<table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd><span class="option">-a</span></kbd></td>
+<td>Output all.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-b</span></kbd></td>
+<td>Output both (this description is
+quite long).</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-c <var>arg</var></span></kbd></td>
+<td>Output just arg.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">--long</span></kbd></td>
+<td>Output all day long.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-p</span></kbd></td>
+<td><p class="first">This option has two paragraphs in the description.
+This is the first.</p>
+<p class="last">This is the second.  Blank lines may be omitted between
+options (as above) or left in (as here and below).</p>
+</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd><span class="option">--very-long-option</span></kbd></td>
+</tr>
+<tr><td>&nbsp;</td><td>A VMS-style option.  Note the adjustment for
+the required two spaces.</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd><span class="option">--an-even-longer-option</span></kbd></td>
+</tr>
+<tr><td>&nbsp;</td><td>The description can also start on the next line.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-2</span>, <span class="option">--two</span></kbd></td>
+<td>This option has two variants.</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd><span class="option">-f <var>FILE</var></span>, <span class="option">--file=<var>FILE</var></span></kbd></td>
+</tr>
+<tr><td>&nbsp;</td><td>These two options are synonyms; both have
+arguments.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">/V</span></kbd></td>
+<td>A VMS/DOS-style option.</td></tr>
+</tbody>
+</table>
+<p><strong>Literal Blocks</strong></p>
+<p>Doctree element: literal_block.
+This is a typical paragraph.  An indented literal block follows.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]:</span>   <span class="c1"># this is program code, shown as-is</span>
+    <span class="nb">print</span> <span class="n">a</span>
+<span class="nb">print</span> <span class="s2">&quot;it&#39;s...&quot;</span>
+<span class="c1"># a literal block continues until the indentation ends</span>
+</pre></div>
+</div>
+<p><strong>Expanded form</strong></p>
+<p>Paragraph:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Literal</span> <span class="n">block</span>
+</pre></div>
+</div>
+<p>Partially minimized form:</p>
+<p>Paragraph:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Literal</span> <span class="n">block</span>
+</pre></div>
+</div>
+<p>Fully minimized form:</p>
+<p>Paragraph:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Literal</span> <span class="n">block</span>
+</pre></div>
+</div>
+<p><strong>Indented Literal Blocks</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>paragraph
+(ends with &#8221;::&#8221;)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>indented literal block</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Quoted Literal Blocks</strong></p>
+<p>&gt;&gt; Great idea!
+&gt;
+&gt; Why didn&#8217;t I think of that?</p>
+<p>You just did!  ;-)
+Syntax diagram:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>paragraph
+(ends with &#8221;::&#8221;)</td>
+</tr>
+<tr class="row-even"><td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>&#8220;&gt;&#8221; per-line-quoted
+&#8220;&gt;&#8221; contiguous literal block</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Line Blocks</strong></p>
+<p>This example illustrates continuation lines:</p>
+<div class="line-block">
+<div class="line">Lend us a couple of bob till Thursday.</div>
+<div class="line">I&#8217;m absolutely skint.</div>
+<div class="line">But I&#8217;m expecting a postal order and I can pay you back
+as soon as it comes.</div>
+<div class="line">Love, Ewan.</div>
+</div>
+<p>This example illustrates the nesting of line blocks, indicated by the initial indentation of new lines:</p>
+<p>Take it away, Eric the Orchestra Leader!</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line">A one, two, a one two three four</div>
+<div class="line"><br /></div>
+<div class="line">Half a bee, philosophically,</div>
+<div class="line-block">
+<div class="line">must, <em>ipso facto</em>, half not be.</div>
+</div>
+<div class="line">But half the bee has got to be,</div>
+<div class="line-block">
+<div class="line"><em>vis a vis</em> its entity.  D&#8217;you see?</div>
+<div class="line"><br /></div>
+</div>
+<div class="line">But can a bee be said to be</div>
+<div class="line-block">
+<div class="line">or not to be an entire bee,</div>
+<div class="line-block">
+<div class="line">when half the bee is not a bee,</div>
+<div class="line-block">
+<div class="line">due to some ancient injury?</div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="line">Singing...</div>
+</div>
+</div></blockquote>
+<p>Block Quotes</p>
+<p>Doctree element: block_quote, attribution.</p>
+<p>A text block that is indented relative to the preceding text, without preceding markup indicating it to be a literal block or other content, is a block quote. All markup processing (for body elements and inline markup) continues within the block quote:</p>
+<p>This is an ordinary paragraph, introducing a block quote.</p>
+<blockquote>
+<div><p>&#8220;It is my business to know things.  That is my trade.&#8221;</p>
+<p class="attribution">&mdash;Sherlock Holmes</p>
+</div></blockquote>
+<p>A block quote may end with an attribution: a text block beginning with &#8220;&#8211;&#8221;, &#8220;&#8212;&#8221;, or a true em-dash, flush left within the block quote. If the attribution consists of multiple lines, the left edges of the second and subsequent lines must align.</p>
+<p>Multiple block quotes may occur consecutively if terminated with attributions.</p>
+<p>Unindented paragraph.</p>
+<p>Block quote 1.</p>
+<p>—Attribution 1</p>
+<p>Block quote 2.
+Empty comments may be used to explicitly terminate preceding constructs that would otherwise consume a block quote:</p>
+<ul class="simple">
+<li>List item.</li>
+</ul>
+<blockquote>
+<div>Block quote 3.</div></blockquote>
+<p>Empty comments may also be used to separate block quotes:</p>
+<blockquote>
+<div>Block quote 4.</div></blockquote>
+<blockquote>
+<div>Block quote 5.</div></blockquote>
+<p>Blank lines are required before and after a block quote, but these blank lines are not included as part of the block quote.</p>
+<p><strong>Doctest Blocks</strong></p>
+<p>This is an ordinary paragraph.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s1">&#39;this is a Doctest block&#39;</span>
+<span class="go">this is a Doctest block</span>
+</pre></div>
+</div>
+<p>The following is a literal block:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">This</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">recognized</span> <span class="k">as</span> <span class="n">a</span> <span class="n">doctest</span> <span class="n">block</span> <span class="n">by</span>
+<span class="go">reStructuredText.  It *will* be recognized by the doctest</span>
+<span class="go">module, though!</span>
+</pre></div>
+</div>
+<p>Indentation is not required for doctest blocks.</p>
+<p><strong>Grid Tables</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="43%" />
+<col width="21%" />
+<col width="18%" />
+<col width="18%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Header row, column 1
+(header rows optional)</th>
+<th class="head">Header 2</th>
+<th class="head">Header 3</th>
+<th class="head">Header 4</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>body row 1, column 1</td>
+<td>column 2</td>
+<td>column 3</td>
+<td>column 4</td>
+</tr>
+<tr class="row-odd"><td>body row 2</td>
+<td colspan="3">Cells may span columns.</td>
+</tr>
+<tr class="row-even"><td>body row 3</td>
+<td rowspan="2">Cells may
+span rows.</td>
+<td colspan="2" rowspan="2"><ul class="first last simple">
+<li>Table cells</li>
+<li>contain</li>
+<li>body elements.</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>body row 4</td>
+</tr>
+</tbody>
+</table>
+<p>Some care must be taken with grid tables to avoid undesired interactions with cell text in rare cases. For example, the following table contains a cell in row 2 spanning from column 2 to column 4:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="22%" />
+<col width="24%" />
+<col width="24%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>row 1, col 1</td>
+<td>column 2</td>
+<td>column 3</td>
+<td>column 4</td>
+</tr>
+<tr class="row-even"><td>row 2</td>
+<td colspan="3">&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>row 3</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>If a vertical bar is used in the text of that cell, it could have unintended effects if accidentally aligned with column boundaries:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="22%" />
+<col width="24%" />
+<col width="24%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>row 1, col 1</td>
+<td>column 2</td>
+<td>column 3</td>
+<td>column 4</td>
+</tr>
+<tr class="row-even"><td>row 2</td>
+<td colspan="2">Use the command <a href="#id1"><span class="problematic" id="id2">``</span></a>ls</td>
+<td>more``.</td>
+</tr>
+<tr class="row-odd"><td>row 3</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Several solutions are possible. All that is needed is to break the continuity of the cell outline rectangle. One possibility is to shift the text by adding an extra space before:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="22%" />
+<col width="24%" />
+<col width="24%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>row 1, col 1</td>
+<td>column 2</td>
+<td>column 3</td>
+<td>column 4</td>
+</tr>
+<tr class="row-even"><td>row 2</td>
+<td colspan="3">Use the command <code class="docutils literal"><span class="pre">ls</span> <span class="pre">|</span> <span class="pre">more</span></code>.</td>
+</tr>
+<tr class="row-odd"><td>row 3</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Another possibility is to add an extra line to row 2:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="22%" />
+<col width="24%" />
+<col width="24%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>row 1, col 1</td>
+<td>column 2</td>
+<td>column 3</td>
+<td>column 4</td>
+</tr>
+<tr class="row-even"><td>row 2</td>
+<td colspan="3">Use the command <code class="docutils literal"><span class="pre">ls</span> <span class="pre">|</span> <span class="pre">more</span></code>.</td>
+</tr>
+<tr class="row-odd"><td>row 3</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Simple Tables</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="29%" />
+<col width="29%" />
+<col width="41%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">A</th>
+<th class="head">B</th>
+<th class="head">A and B</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr class="row-odd"><td>True</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr class="row-even"><td>False</td>
+<td>True</td>
+<td>False</td>
+</tr>
+<tr class="row-odd"><td>True</td>
+<td>True</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="31%" />
+<col width="31%" />
+<col width="38%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">Inputs</th>
+<th class="head">Output</th>
+</tr>
+<tr class="row-even"><th class="head">A</th>
+<th class="head">B</th>
+<th class="head">A or B</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-odd"><td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr class="row-even"><td>True</td>
+<td>False</td>
+<td>True</td>
+</tr>
+<tr class="row-odd"><td>False</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr class="row-even"><td>True</td>
+<td>True</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="14%" />
+<col width="86%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">col 1</th>
+<th class="head">col 2</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>Second column of row 1.</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>Second column of row 2.
+Second line of paragraph.</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td><ul class="first last simple">
+<li>Second column of row 3.</li>
+<li>Second item in bullet
+list (row 3, column 2).</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td>Row 4; column 1 will be empty.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Explicit Markup Blocks</strong></p>
+<table class="docutils footnote" frame="void" id="id3" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[1]</td><td>Body elements go here.</td></tr>
+</tbody>
+</table>
+<p><strong>Auto-Numbered Footnotes</strong></p>
+<p><a class="footnote-reference" href="#id7" id="id4">[2]</a>
+<a class="footnote-reference" href="#id8" id="id5">[3]</a></p>
+<p>(<a class="footnote-reference" href="#id9" id="id6">[4]</a>)</p>
+<table class="docutils footnote" frame="void" id="id7" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[2]</a></td><td>This is footnote 1.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id8" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id5">[3]</a></td><td>This is footnote 2.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id9" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id6">[4]</a></td><td>This is footnote 3.</td></tr>
+</tbody>
+</table>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="body_elements_2.html" class="btn btn-neutral float-right" title="Body Elements 2" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="syntax_details.html" class="btn btn-neutral" title="Syntax Details" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, jdlkajdja.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:';sdasd',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

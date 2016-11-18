@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -9,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Index &mdash; hello world ;sdasd documentation</title>
+  <title>Troubleshooting &mdash; hello world ;sdasd documentation</title>
   
 
   
@@ -32,9 +31,10 @@
 
   
         <link rel="index" title="Index"
-              href="#"/>
+              href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="hello world ;sdasd documentation" href="index.html"/> 
+    <link rel="top" title="hello world ;sdasd documentation" href="index.html"/>
+        <link rel="prev" title="Body Elements 2" href="body_elements_2.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -83,12 +83,21 @@
           
             
             
-                <ul>
+                <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="structure.html">Structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="syntax_details.html">Syntax Details</a></li>
 <li class="toctree-l1"><a class="reference internal" href="body_elements.html">Body Elements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="body_elements_2.html">Body Elements 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Troubleshooting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#oops">Oops ¯\_(ツ)_/¯</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#omg-i-ve-messed-up-my-database">OMG: I&#8217;ve messed up my database</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#via-docker">Via Docker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#via-the-cli">Via the CLI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#manually">Manually</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             
@@ -111,7 +120,7 @@
         <div class="rst-content">
           
 
-
+ 
 
 
 
@@ -119,9 +128,11 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li></li>
+    <li>Troubleshooting</li>
       <li class="wy-breadcrumbs-aside">
         
+          
+            <a href="_sources/troubleshooting.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -131,17 +142,63 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="troubleshooting">
+<h1>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="oops">
+<h2>Oops ¯\_(ツ)_/¯<a class="headerlink" href="#oops" title="Permalink to this headline">¶</a></h2>
+<p>My installation fails with:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>error: Setup script exited with error in BigchainDB setup command: <span class="s1">&#39;install_requires&#39;</span> must be a string or list of strings containing valid project/version requirement specifiers
+</pre></div>
+</div>
+<ul class="simple">
+<li><strong>Solution</strong>: update the <code class="docutils literal"><span class="pre">setuptools</span></code>, see <a class="reference external" href="https://github.com/bigchaindb/bigchaindb/issues/236">PR fix</a></li>
+</ul>
+</div>
+<div class="section" id="omg-i-ve-messed-up-my-database">
+<h2>OMG: I&#8217;ve messed up my database<a class="headerlink" href="#omg-i-ve-messed-up-my-database" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><strong>Solution</strong>: reset your bigchaindb_examples database</li>
+<li><strong>Warning</strong>: the following resets your bigchaindb database to its default initialized state!</li>
+</ul>
+<div class="section" id="via-docker">
+<h3>Via Docker<a class="headerlink" href="#via-docker" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ make init
+</pre></div>
+</div>
+<p>Or, to reinitialize and restart:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ make restart
+</pre></div>
+</div>
+</div>
+<div class="section" id="via-the-cli">
+<h3>Via the CLI<a class="headerlink" href="#via-the-cli" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ bigchaindb-examples init --all
+</pre></div>
+</div>
+<p>Or, to reinitialize and restart:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ bigchaindb-examples start --init --all
+</pre></div>
+</div>
+</div>
+<div class="section" id="manually">
+<h3>Manually<a class="headerlink" href="#manually" title="Permalink to this headline">¶</a></h3>
+<p>Restart your RethinkDB instance and follow the initialization steps in
+<span class="xref std std-ref">manual-setup</span>.</p>
+</div>
+</div>
 </div>
 
 
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="body_elements_2.html" class="btn btn-neutral" title="Body Elements 2" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
